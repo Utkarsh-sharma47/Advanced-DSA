@@ -18,11 +18,13 @@ int main ()
     /*find funtion*/
     auto it=s.find("abc");
     s.erase(it);
+
     cout<<"AFTER ERASEING from us"<<endl;
     for(auto it: s)
     {
         cout<<it<<endl;
     }
+    
 
     return 0;
 }

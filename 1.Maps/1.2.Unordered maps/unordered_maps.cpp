@@ -12,7 +12,7 @@ int main ()
 
     for(auto it: m)
     {
-        cout<<it.first<<it.second<<endl;
+        cout<<"key:"<<it.first<<"  value:"<<it.second<<endl;
     }
 
     /*find funtion*/

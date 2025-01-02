@@ -12,13 +12,12 @@ int main ()
 
     for(auto it: m)
     {
-        cout<<it.first<<it.second<<endl;
+        cout<<"key:"<<it.first<<"  value:"<<it.second<<endl;
     }
 
     /*find funtion*/
-    auto x=m.find(2);
+    auto x=m.find(3);
     cout<<(*x).first;
 
     return 0;
 }
-
