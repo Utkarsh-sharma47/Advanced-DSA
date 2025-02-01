@@ -15,35 +15,16 @@ struct Node{
         right=NULL;
     }
 };
+/*
+Shortest distance between two nodes in Binary Tree
+it is the minimum number of edges to be traversed 
+to reach from one node to another node.
+*/
 
-void rightview(Node* root)
-{
-    if(root==NULL) return;
-    queue<Node*> q;
-    q.push(root);
-    q.push(NULL);
-
-    while(!q.empty())
-    {
-        Node* node = q.front();
-        q.pop();
-
-        if(node!=NULL)
-        {
-            if(q.front()==NULL)
-            {
-                cout<<node->data<<" ";
-            }
-            if(node->left!=NULL) q.push(node->left);
-            if(node->right!=NULL) q.push(node->right);
-        }
-        else if(!q.empty())
-        {
-            q.push(NULL);
-        }
-    }
-
+int shortestdist(Node* root){
+    
 }
+
 
 int main()
 {
@@ -66,8 +47,6 @@ int main()
        /     
       7       
 */
-
-    rightview(root);
 
     return 0;
 }

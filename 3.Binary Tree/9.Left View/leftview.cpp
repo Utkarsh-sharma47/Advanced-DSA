@@ -16,31 +16,28 @@ struct Node{
     }
 };
 
-void rightview(Node* root)
+void leftview(Node* root)
 {
     if(root==NULL) return;
     queue<Node*> q;
     q.push(root);
-    q.push(NULL);
 
     while(!q.empty())
     {
-        Node* node = q.front();
-        q.pop();
+        int n = q.size();
+        for(int i=1; i<=n; i++)
+        {
+            Node* temp = q.front();
 
-        if(node!=NULL)
-        {
-            if(q.front()==NULL)
+            if(i==1)
             {
-                cout<<node->data<<" ";
+                cout<<temp->data<<" ";
             }
-            if(node->left!=NULL) q.push(node->left);
-            if(node->right!=NULL) q.push(node->right);
+            if(temp->left!=NULL) q.push(temp->left);
+            if(temp->right!=NULL) q.push(temp->right);
         }
-        else if(!q.empty())
-        {
-            q.push(NULL);
-        }
+        
+
     }
 
 }
@@ -67,7 +64,7 @@ int main()
       7       
 */
 
-    rightview(root);
+    leftview(root);
 
     return 0;
 }

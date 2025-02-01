@@ -5,9 +5,12 @@ int main ()
 {
 
     /*basic input output*/
-    unordered_set <string> s;
+    set <string> s;
+    s.insert("bcd");
     s.insert("bcd");
     s.insert("abc");
+    s.insert("xyz");
+    s.insert("xyz");
     s.insert("xyz");
 
     for(auto it: s)
