@@ -15,15 +15,30 @@ struct Node{
         right=NULL;
     }
 };
-/*
-Shortest distance between two nodes in Binary Tree
-it is the minimum number of edges to be traversed 
-to reach from one node to another node.
-*/
 
-int shortestdist(Node* root){
+//flatten binary tree
+Node* flat(Node* root)
+{
+    if(root->left != NULL)
+    {
+        flat(root->left);
+        Node* temp = root->right;
+        root->right = root->left;
+        root->left = NULL;
+
+        Node* t = root->right;
+        while(t->right != NULL)
+        {
+            t = t->right;
+        }
+        t->right = temp;
+    }
+    flat(root->right);
+
     
 }
+
+
 
 
 int main()

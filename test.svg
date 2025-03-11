@@ -1,0 +1,14 @@
+<!-- Restaurants -->
+<text x="200" y="300" font-weight="bold">Restaurant Network</text>
+<text x="250" y="330">Restaurants: 50,000+</text>
+<text x="450" y="330">Restaurants: 45,000+</text>
+
+<!-- Delivery Time -->
+<text x="200" y="380" font-weight="bold">Average Delivery Time</text>
+<text x="250" y="410">35-45 minutes</text>
+<text x="450" y="410">30-40 minutes</text>
+
+<!-- Pricing -->
+<text x="200" y="460" font-weight="bold">Delivery Charges</text>
+<text x="250" y="490">₹20-50</text>
+<text x="450" y="490">₹15-45</text>
